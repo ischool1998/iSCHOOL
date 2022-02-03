@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
-
-/* RESET */
+@import url("http://fonts.cdnfonts.com/css/proxima-nova-2");
 
 * {
   margin: 0;
@@ -16,7 +13,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: "Comfortaa", cursive;
+  font-family: "Proxima Nova", sans-serif;
   text-align: center;
 }
 
@@ -78,33 +75,33 @@ p {
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #000;
+  color: #404040;
 }
 
 .nav .first-links {
-  color: #ecbd00;
+  color: #004aad;
 }
 
 .nav-item a {
   padding: 1rem;
 }
 .nav-item a:hover {
-  color: #ecbd00;
+  color: #004aad;
 }
 
 .login-signup a {
   width: 110px;
-  border: 1px solid #ecbd00;
+  border: 1px solid #004aad;
   border-radius: 10px;
   padding: 10px;
   margin-right: 10px;
-  color: #ecbd00;
+  color: #004aad;
   text-align: center;
   transition: 0.5s ease-out;
 }
 
 .login-signup .sign-up {
-  background-color: #ecbd00;
+  background-color: #004aad;
   color: #fff;
 }
 
@@ -113,8 +110,8 @@ p {
   color: #fff;
 }
 .login-signup .sign-up:hover {
-  background-color: #004aad;
-  color: #ecbd00;
+  background-color: #fff;
+  color: #004aad;
 }
 
 .toggle-button {
@@ -578,35 +575,68 @@ main {
 }
 
 footer {
-  width: 100%;
-  height: 300px;
   background-color: #004aad;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-flow: row wrap;
+  padding: 60px 0px;
   color: #fff;
-}
-.columns {
-  width: 90%;
-  display: flex;
+  gap: 45px;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
 }
 
-.column {
+footer h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.space {
+  padding: 0px 60px;
+}
+
+footer li {
+  line-height: 2em;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  text-align: left;
+}
+.footer-left p {
+  font-size: 1rem;
+  padding-top: 20px;
+  text-align: left;
+  line-height: 2.5;
+  font-weight: 400;
+}
+.footer-left h3 {
+  text-align: left;
+}
+.footer-left a {
+  display: inline-block;
+  padding: 10px 10px 10px 0px;
+}
+.footer-left img {
+  width: 100%;
+}
+
+.footer-right {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.column h3 {
-  text-align: center;
-  font-size: 1rem;
-}
-.column p {
-  text-align: center;
-  font-size: 1rem;
+  align-items: left;
 }
 
 /*##################### media query #########################*/
@@ -705,5 +735,9 @@ footer {
 
   .hero p {
     font-size: 0.75rem;
+  }
+
+  footer {
+    flex-direction: column-reverse;
   }
 }
