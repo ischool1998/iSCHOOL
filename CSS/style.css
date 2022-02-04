@@ -336,7 +336,7 @@ main {
 /*##############carousel starts here#######*/
 .slider {
   position: relative;
-  width: 90%;
+  width: 95%;
   height: 100vh;
   overflow: hidden;
 }
@@ -386,12 +386,6 @@ main {
   font-size: 45px;
 }
 
-.slide-data p {
-  font-family: "Proxima Nova", sans-serif;
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
 .slide-data button {
   font-family: "Proxima Nova", sans-serif;
   background: none;
@@ -416,8 +410,8 @@ main {
   background: none;
   outline: none;
   border: none;
-  font-size: 45px;
-  color: #727070;
+  font-size: 35px;
+  color: #757474c7;
   transition: 0.4s linear;
 }
 
@@ -431,6 +425,14 @@ main {
 
 .slider .next {
   right: 3%;
+}
+
+.slider > button > span > i {
+  box-shadow: 2px 2px 6px 2px #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
 }
 
 .dots {
@@ -495,6 +497,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .grid-col .image-container {
@@ -515,11 +518,12 @@ main {
 }
 .grid-col p {
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 400;
   padding: 10px;
   color: #404040;
   text-align: center;
+  padding: 5px 40px;
 }
 
 .testimonials {
@@ -578,6 +582,15 @@ main {
 }
 .download .app-store-button a img {
   width: 118px;
+}
+
+.offer,
+.works,
+.testimonials,
+.download {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 footer {
@@ -707,6 +720,28 @@ footer a {
   .search-bar {
     width: 50%;
   }
+
+  .offer h2,
+  .works h2 {
+    font-size: 1.5rem;
+  }
+
+  .works h3 {
+    font-size: 1.1rem;
+  }
+  .offer p,
+  .works p,
+  .grid-col p {
+    font-size: 0.8rem;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+  footer p,
+  .footer-left p {
+    font-size: 0.75rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -749,5 +784,9 @@ footer a {
   .footer-right {
     flex-direction: column;
     gap: 30px;
+  }
+  .footer-left {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
