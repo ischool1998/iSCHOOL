@@ -97,6 +97,7 @@ p {
   margin-right: 10px;
   color: #004aad;
   text-align: center;
+  font-weight: 700;
   transition: 0.5s ease-out;
 }
 
@@ -239,6 +240,7 @@ main {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  padding: 30px;
 }
 
 .offer h2 {
@@ -257,21 +259,22 @@ main {
 }
 
 .columns {
-  padding-top: 40px;
+  padding-top: 20px;
   width: 90%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-column-gap: 45px;
-  grid-row-gap: 45px;
+  grid-column-gap: 35px;
+  grid-row-gap: 35px;
+  margin: 30px;
 }
 
 .columns .col {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   box-shadow: 2px 2px 6px 1px #e2e2e2;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 
@@ -377,20 +380,20 @@ main {
 }
 
 .slide-data h1 {
-  font-family: "Anton", serif;
+  font-family: "Proxima Nova", sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 45px;
 }
 
 .slide-data p {
-  font-family: "Cabin", serif;
+  font-family: "Proxima Nova", sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
 }
 
 .slide-data button {
-  font-family: "Roboto", serif;
+  font-family: "Proxima Nova", sans-serif;
   background: none;
   outline: none;
   border: 1px solid #404040;
@@ -414,7 +417,7 @@ main {
   outline: none;
   border: none;
   font-size: 45px;
-  color: #404040;
+  color: #727070;
   transition: 0.4s linear;
 }
 
@@ -717,7 +720,6 @@ footer a {
 
   .login-signup a {
     width: 70px;
-    border: 1px solid #ecbd00;
     border-radius: 10px;
     padding: 5px;
   }
@@ -742,5 +744,10 @@ footer a {
 
   footer {
     flex-direction: column-reverse;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 30px;
   }
 }
